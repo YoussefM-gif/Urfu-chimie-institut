@@ -1,0 +1,721 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    
+}
+
+/* Container */
+.container {
+    min-width: 1600px;
+    margin: 0 auto;
+}
+
+/* Header styles */
+.header {
+    min-width: 1600px;
+    position: relative;
+    height: 108px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header a:hover {
+    text-decoration: underline;
+}
+
+/* Reusable CTA Button styles */
+.cta-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 18px;
+    left: 1280px; /* Adjusted left position */
+    width: 280px; /* Corrected width */
+    height: 72px; /* Corrected height */
+    padding: 1px 0px 0px 0px; /* Adjusted padding */
+    gap: 10px; /* Adjusted gap */
+    background: #EF302B;
+    border-radius: 24px; /* Adjusted border-radius */
+    color: white;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    opacity: 1; /* Adjusted opacity */
+}
+
+.cta-button:hover {
+    background: #C0231F;
+}
+
+.cta-button span {
+    font-family: 'Mont';
+    font-weight: 700;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+/* ...existing code... */
+
+/* Menu styles */
+.menu {
+    display: flex;
+    width: 664px; /* Corrected width */
+    height: 24px; /* Corrected height */
+    position: absolute; /* Added position property */
+    top: 41px;
+    left: 296px;
+    gap: 40px;
+    opacity: 1; /* Set opacity to 1 to make it visible */
+}
+
+.menu a {
+    font-family: 'Mont';
+    font-size: 18px;
+    font-weight: 600;
+    color: #FFFFFF;
+    white-space: nowrap;
+}
+
+/* Logo styles */
+.logo {
+    position: absolute;
+    width: 142px;
+    height: 48px;
+    top: 30px;
+    left: 40px;
+    gap: 0px;
+    opacity: 1; /* Set opacity to 1 to make it visible */
+}
+
+/* Hero section styles */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh; /* Ensure it occupies the full height of the screen */
+    padding: 0 0px; /* Adjust side padding as needed */
+    color: #fff;
+    margin-top: 0; /* Remove any margin at the top */
+    padding-top: 0; /* Remove any padding at the top */
+    margin-bottom: 0; /* Ensure no margin at the bottom */
+}
+
+.hero-images {
+    display: flex;
+    flex-direction: column;
+    width: 1600px;
+    position: absolute;
+    top: 0px; /* Adjust this value to ensure the images are directly under the menu bar */
+}
+
+.hero-row {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1; /* Ensure these elements are below the image-with-gradient elements */
+}
+
+.hero-images img {
+    height: 450px;
+    /* Remove box-shadow to make borders disappear */
+    box-shadow: none;
+}
+
+.hero-images .back-image1,
+.hero-images .back-image4, 
+.hero-images .back-image2,
+.hero-images .back-image5 {
+    width: 399.99px;
+}
+
+.hero-images .back-image6,
+.hero-images .back-image3 {
+    width: 399.99px;
+}
+
+/* hero content */
+.hero-content {
+    position: relative;
+    z-index: 3; /* Ensure this element is above the images */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.hero-content .magister {
+    position: absolute; /* Use absolute positioning */
+    top: 64.66%; /* Move further down */
+    left: 40px; /* Adjusted left position */
+    width: 880px; /* Adjusted width */
+    height: 238px; /* Adjusted height */
+    gap: 0px; /* Adjusted gap */
+    z-index: 4; /* Ensure it is above other elements */
+    color: white; /* Ensure text color is visible */
+    text-align: left; /* Ensure text is aligned to the left */
+    opacity: 1; /* Set opacity to 1 to make it visible */
+    transform: none; /* Remove vertical centering */
+}
+
+.hero-content .practique {
+    position: absolute; /* Use absolute positioning */
+    top: 150px; /* Center vertically */
+    left: 1064px; /* Center horizontally */
+    z-index: 4; /* Ensure it is above other elements */
+    color: white; /* Ensure text color is visible */
+    text-align: left; /* Ensure text is aligned to the left */
+}
+
+.hero-content .h1,
+.hero-content .p1 {
+    text-align: left;
+}
+
+.hero-content .p2,
+.hero-content .p3 {
+    font-family: 'Mont'; /* Adjusted font-family */
+    font-size: 24px; /* Adjusted font-size */
+    font-weight: 600; /* Adjusted font-weight */
+    line-height: 28.8px; /* Adjusted line-height */
+    text-align: left; /* Adjusted text-align */
+    text-underline-position: from-font; /* Adjusted text-underline-position */
+    text-decoration-skip-ink: none; /* Adjusted text-decoration-skip-ink */
+    color: white;
+}
+
+.hero-content .p2 {
+    width: 496px;
+    height: 116px;
+}
+
+.hero-content .p3 {
+    width: 277px;
+    height: 34px;
+    border: none; /* Remove border */
+    border-bottom: 2px solid white; /* Add underline border */
+    animation-timing-function: ease-out;
+    animation-duration: 500ms;
+    color: white;
+    text-align: right;
+    text-decoration: none; /* Remove text underline */
+}
+
+.hero-content h1 {
+    width: 880px;
+    height: 84px;
+    gap: 0px;
+    font-family: 'Mont';
+    font-size: 96px;
+    font-weight: 600;
+    line-height: 84.48px;
+    letter-spacing: -0.02em;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom: 20px;
+    transition: opacity 1s ease-in-out;
+    color: white;
+    text-align: left;
+}
+
+.hero-content .p1 {
+    width: 880px;
+    height: 114px;
+    font-family: 'Mont';
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 57.2px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: white;
+}
+
+/* Ligne de la courbe */
+.curved-line {
+    position: absolute;
+    top: 180px; /* Adjust this value as needed */
+    left: 0; /* Adjust this value as needed */
+    width: 100%; /* Use percentage to make it responsive */
+    z-index: 3; /* Ensure it is above other elements */
+    background: transparent; /* Ensure no background color overlaps */
+}
+
+.curved-line img {
+    display: block;
+    width: 100%; /* Use percentage to make it responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.image-with-gradient {
+    position: absolute;
+    z-index: 2; /* Ensure these elements are above the hero-row images */
+}
+
+.image-with-gradient.png1 {
+    position: absolute;
+    top: 42px; /* Adjust this value as needed */
+    left: 600px; /* Adjust this value as needed */
+    z-index: 2; /* Ensure these elements are above the hero-row images */
+    width: 1000px; /* New width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.image-with-gradient.png2 {
+    position: absolute;
+    top: 250.5px;
+    right: 812px; 
+    z-index: 2; 
+    width: 787.8px; /* New width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Section À propos */
+.aboutsteps {
+    width: 1600px; /* Adjusted width */
+    height: 1143px; /* Adjusted height */
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px; /* Ensure no margin at the top */
+    margin-right: 0px;
+}
+.about {
+    display: flex; /* Use flexbox for horizontal alignment */
+    flex-direction: row; /* Align children horizontally */
+    justify-content: space-between; /* Distribute space between children */
+    align-items: center; /* Align items vertically */
+    width: 1520px; /* Adjusted width */
+    height: 436.4px; /* Adjusted height */
+    position: relative; /* Changed position to relative */
+    left: 40px; /* Adjusted left position */
+    margin-top: 140px; /* Ensure it is 120px below .aboutsteps */
+    padding: 20px; /* Add padding inside the section */
+}
+
+.about .div1 {
+    flex: 1; /* Take up remaining space */
+    margin-bottom: 119.6px; /* Add some space between text and images */
+    width: 1520px;
+    height: 436.4px;
+}
+.about .div1 h2 {
+    width: 496px; /* Adjusted width */
+    height: 61px; /* Adjusted height */
+    color: #1E4391;
+    font-size: 52px; /* Increased font size in pixels */
+ 
+}
+
+.about .div1 a {
+    width: 235px; /* Adjusted width */
+    height: 23px; /* Adjusted height */
+    color: #1E4391; /* Adjusted text color */
+    text-decoration: none; /* Remove default underline */
+    border-bottom: 2px solid #1E4391; /* Add underline with specified color */
+    display: inline-block; /* Ensure the link respects width and height */
+    margin-bottom: 40px; /* Ensure margin-bottom is applied */
+    font-family: 'Mont'; /* Adjusted font-family */
+    font-size: 18px; /* Adjusted font-size */
+    font-weight: 600; /* Adjusted font-weight */
+    line-height: 21.6px; /* Adjusted line-height */
+    text-align: left; /* Adjusted text-align */
+    text-underline-position: from-font; /* Adjusted text-underline-position */
+    text-decoration-skip-ink: none; /* Adjusted text-decoration-skip-ink */
+}
+
+.about .div1 .cta-button2 {
+    background: #EF302B; /* Adjusted background color */
+    width: 280px; /* Fixed width */
+    height: 64px; /* Fixed height */
+    position: relative; /* Changed position to relative */
+    top: 0; /* Reset top position */
+    margin-top: 20px; /* Add margin-top to create space */
+    padding: 1px 0px 0px 0px; /* Adjusted padding */
+    border-radius: 18px; /* Adjusted border-radius */
+    opacity: 1; /* Adjusted opacity */
+    display: flex; /* Ensure button content is centered */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    color: white; /* Ensure text color is visible */
+    border: none; /* Remove border */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.about .div1 .cta-button2:hover {
+    background: #C0231F; /* Adjusted hover background color */
+}
+
+.div1 p {
+    width: 368px; /* Adjusted width */
+    height: 153px; /* Adjusted height */
+    font-family: 'Mont'; /* Adjusted font-family */
+    font-size: 16px; /* Adjusted font-size */
+    font-weight: 600; /* Adjusted font-weight */
+    line-height: 22.4px; /* Adjusted line-height */
+    text-align: left; /* Adjusted text-align */
+    text-underline-position: from-font; /* Adjusted text-underline-position */
+    text-decoration-skip-ink: none; /* Adjusted text-decoration-skip-ink */
+    color: #222222; /* Ensure text color is visible */
+}
+
+.about .div1 .cta-button2 {
+    background: #EF302B; /* Adjusted background color */
+    width: 280px; /* Fixed width */
+    height: 64px; /* Fixed height */
+    position: relative; /* Changed position to relative */
+    top: 0; /* Reset top position */
+    margin-top: 20px; /* Add margin-top to create space */
+    padding: 1px 0px 0px 0px; /* Adjusted padding */
+    border-radius: 18px; /* Adjusted border-radius */
+    opacity: 1; /* Adjusted opacity */
+    display: flex; /* Ensure button content is centered */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    color: white; /* Ensure text color is visible */
+    border: none; /* Remove border */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.about .div1 .cta-button2:hover {
+    background: #C0231F; /* Adjusted hover background color */
+}
+
+.verti {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    height: 436.4px;
+    margin-right: 200px;
+}
+
+.imglab {
+    display: flex; /* Ensure images are displayed horizontally */
+    gap: 20px; /* Add some space between images */
+    margin-bottom: 0px; /* Add margin to create distance between imglab and stats */
+}
+
+.imglab img {
+    width: 496px; /* Adjusted width */
+    height: 276px; /* Adjusted height */
+    border-radius: 2px 0px 0px 0px; /* Adjusted border-radius */
+}
+
+.stats {
+    display: flex; /* Align items horizontally */
+    justify-content: space-between; /* Space stats evenly */
+    align-items: center; /* Align items vertically */
+    text-align: center; /* Center the text and numbers */
+}
+
+.stat {
+    flex: 1; /* Equal width for all stats */
+    position: relative; /* Needed for the vertical separators */
+    width: 325.39px;
+    height: 120.4px;
+    gap: 0px;
+    opacity: 0px;
+    margin: 0 10px; /* Add margin to create distance between stats */
+}
+
+.stat h3 {
+    font-family: 'Mont'; /* Font family */
+    font-size: 52px; /* Font size */
+    font-weight: 600; /* Font weight */
+    line-height: 57.2px; /* Line height */
+    text-align: left; /* Text alignment */
+    text-underline-position: from-font; /* Text underline position */
+    text-decoration-skip-ink: none; /* Text decoration skip ink */
+    width: 325.39px; /* Width */
+    height: 56.72px; /* Height */
+    color: #1E4391; /* Main color */
+    position: relative; /* Make sure `::after` positions correctly relative to <h3> */
+    margin-bottom: 10px; /* Adjust space below the number */
+}
+
+.stat .line {
+    width: 324.92px;
+    height: 7.96px;
+    background-color: #1E4391; /* Line color */
+    gap: 0px;
+    opacity: 1; /* Set opacity to 1 to make it visible */
+    margin: 10px auto; /* Center the line and add some margin */
+}
+
+.stat p {
+    font-family: 'Mont'; /* Font family */
+    font-size: 16px; /* Font size */
+    font-weight: 600; /* Font weight */
+    line-height: 22.4px; /* Line height */
+    text-align: left; /* Text alignment */
+    text-underline-position: from-font; /* Text underline position */
+    text-decoration-skip-ink: none; /* Text decoration skip ink */
+    width: 325.39px; /* Width */
+    height: 43.78px; /* Height */
+    color: #000000; /* Text color */
+}
+
+/* Steps section styles */
+.steps {
+    display: flex; /* Use flexbox for horizontal alignment */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Align items vertically */
+    width: 1520px; /* Ensure it does not exceed the maximum width */
+    height: 359px;
+    margin: 0 auto; /* Center the steps section */
+}
+
+.steps .left {
+    flex: 1; /* Take up remaining space */
+    text-align: left; /* Align text to the left */
+    margin-right: 30px;
+}
+
+.steps .right {
+    flex: 1; /* Take up remaining space */
+    text-align: right; /* Align text to the right */
+    margin-left: 780px; /* Move it a bit more to the left */
+}
+
+.steps h2 {
+    font-family: 'Mont'; /* Font family */
+    font-size: 52px; /* Font size */
+    font-weight: 600; /* Font weight */
+    line-height: 57.2px; /* Line height */
+    text-align: left; /* Text alignment */
+    text-underline-position: from-font; /* Text underline position */
+    text-decoration-skip-ink: none; /* Text decoration skip ink */
+    color: #1E4391; /* Text color */
+    width: 411px; /* Width */
+    height: 57px; /* Height */
+}
+
+.step1, .step2, .step3, .step4 {
+    display: flex; /* Use flexbox for horizontal alignment */
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Distribute space between children */
+    gap: 20px; /* Add gap between the two divs */
+    margin-top: 10px; /* Ensure minimal margin */
+    width: 100%; /* Ensure it takes full width */
+    max-width: 1600px; /* Ensure it does not exceed the maximum width */
+}
+
+.step1 {
+    position: absolute; /* Ensure absolute positioning */
+    width: 368px;
+    height: 272px;
+    top: 1683px; /* Ensure the same top value for alignment */
+    left: 0; /* Adjust left position */
+}
+
+.step2 {
+    position: absolute; /* Ensure absolute positioning */
+    width: 368px;
+    height: 163px;
+    top: 1683px; /* Ensure the same top value for alignment */
+    left: 392px; /* Adjust left position */
+}
+
+.step3 {
+    position: absolute;
+    width: 368px;
+    height: 163px;
+    top: 1683px;
+    left: 784px;
+}
+.step4{
+    position: absolute;
+    width: 368px;
+    height: 252px;
+    top: 1683px;
+    left: 1176px; 
+}
+
+
+.steps p {
+    font-family: 'Mont'; /* Font family */
+    font-size: 16px; /* Font size */
+    font-weight: 600; /* Font weight */
+    line-height: 22.4px; /* Line height */
+    text-align: left; /* Text alignment */
+    text-underline-position: from-font; /* Text underline position */
+    text-decoration-skip-ink: none; /* Text decoration skip ink */
+}
+
+.steps h3 {
+    font-family: 'Mont'; /* Font family */
+    font-size: 18px; /* Font size */
+    font-weight: 600; /* Font weight */
+    line-height: 21.6px; /* Line height */
+    text-align: left; /* Text alignment */
+    text-underline-position: from-font; /* Text underline position */
+    text-decoration-skip-ink: none; /* Text decoration skip ink */
+    color: #1E4391; /* Text color */
+}
+
+.steps .p2 {
+    font-family: 'Mont'; /* Font family */
+    font-size: 14px; /* Font size */
+    font-weight: 600; /* Font weight */
+    line-height: 19.6px; /* Line height */
+    text-align: left; /* Text alignment */
+    text-underline-position: from-font; /* Text underline position */
+    text-decoration-skip-ink: none; /* Text decoration skip ink */
+}
+
+.steps-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    margin-right: 25px; /* Ensure minimal margin */  
+}
+
+/* Вы не сгруппировали элементы этапов, из-за этого я не смог определить их размер в пикселях! */
+.step1 img,  .step4 img {
+    width: 55px; /* Adjust the width as needed */
+    height: 165px; /* Adjust the height as needed */
+}
+.step2 img, .step3 img {
+    width: 55px;
+    height: 110px
+}
+
+.step4 img {
+    margin-top: 25px;
+}
+.step1 img, .step4 img {
+    margin-left: 40px; /* Adjust the left margin as needed */
+    margin-bottom: 90px;
+    /* You can also use other properties like margin-top, margin-right, margin-bottom to adjust the position */
+}
+.step2 img, .step3 img{
+    margin-left: 40px; /* Adjust the left margin as needed */
+    margin-bottom: 33px;
+}
+.step1 .t1{
+    margin-top: 180px;
+}
+.step4 .t4{
+    margin-top: 205px;
+}
+
+
+/* Toggle switch styles */
+.toggle-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.text-left, .text-right {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.toggle-switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 24px;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: #002a7f;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* CSS pour gérer les transitions */
+.budget-text, .contract-text {
+    opacity: 0;
+    transform: translateY(-10px); /* Effet de déplacement vers le haut */
+    transition: opacity 0.4s ease, transform 0.4s ease; /* Transition fluide */
+    position: relative; /* Maintenir leur position */
+    visibility: hidden; /* Cacher l'élément visuellement mais le laisser dans le DOM */
+}
+
+.budget-text.visible, .contract-text.visible {
+    opacity: 1; /* Rendre l'élément visible */
+    transform: translateY(0); /* Remettre à sa position initiale */
+    visibility: visible; /* Assurer que l'élément est visible */
+}
+
+.budget-text.hidden, .contract-text.hidden {
+    opacity: 0; /* Rendre l'élément invisible */
+    transform: translateY(-10px); /* Déplacer légèrement vers le haut */
+    visibility: hidden; /* Masquer l'élément visuellement */
+}
+
+/* Transition pour la hauteur du contenu */
+.step-content {
+    transition: height 0.4s ease;
+}
+
+/* ...existing code... */
+
+/* Classe pour les paragraphes avec la couleur #1E4391 */
+.text-blue {
+    color: #1E4391;
+}
+.text-blueT {
+    color: #1E4391;
+    text-decoration: underline;
+}
+
+/* ...existing code... */
+
+.footer {
+    width: 1600px;
+    height: 32px;
+    position: fixed; /* Change to fixed positioning */
+    bottom: 0; /* Align to the bottom of the viewport */
+    left: 0; /* Align to the left of the viewport */
+    background: linear-gradient(270deg, #FF2D7F -0.71%, #FB3727 47.63%, #FEEA0F 100%);
+    transition: transform 0.3s ease; /* Add transition for smooth hiding */
+}
+
+/* ...existing code... */
+
+
